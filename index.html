@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
     <title>Rakiology</title>
     <style>
         body {
@@ -18,6 +19,17 @@
             background-color: #444;
             padding: 10px 0;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            height: 150px;
+        }
+        header img.logo {
+            height: 150px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        h1 {
+            margin: 0;
         }
 
         ul {
@@ -50,8 +62,8 @@
             align-items: center;
         }
 
-        img {
-            width: 80%;
+        img.cat {
+            width: 400px;
             margin-right: 20px;
         }
 
@@ -65,11 +77,16 @@
 
 <body>
     <header>
-        <h1>Rakiology</h1>
-        <h3>Clinical correlation is advised.</h3>
+        <div class="container">
+            <img src="logo.png" alt="logo" class="logo">
+            <div>
+                <h1>Rakiology</h1>
+                <h3>Clinical correlation is advised.</h3>
+            </div>
+        </div>
     </header>
     <div class="container">
-        <img id="random-cat" src="cat/cat_1.jpg" alt="Random Cat Image">
+        <img class="cat" id="random-cat" src="cat/cat_1.jpg" alt="Random Cat Image">
         <div>
             <h2>Useful Links</h2>
             <ul>
