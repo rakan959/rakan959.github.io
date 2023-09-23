@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakiology</title>
+    <title>Radiology</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,21 +45,35 @@
             padding: 20px;
             background-color: #444;
             border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            width: 300px;
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Rakiology</h1>
+        <h1>Radiology</h1>
         <h2>Clinical correlation is advised.</h2>
     </header>
     <div class="container">
-        <h2>Useful Links</h2>
-        <ul>
-            <li><a href="https://radiologyassistant.nl/">Radiology Assistant</a></li>
-            <li><a href="https://radiopaedia.org/?lang=us">Radiopaedia</a></li>
-            <li><a href="https://www.radiologymasterclass.co.uk/tutorials/tutorials">Radiology Masterclass</a></li>
-        </ul>
+        <img id="random-cat" src="cat/cat_1.jpg" alt="Random Cat Image">
+        <div>
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://radiologyassistant.nl/">Radiology Assistant</a></li>
+                <li><a href="https://radiopaedia.org/?lang=us">Radiopaedia</a></li>
+                <li><a href="https://www.radiologymasterclass.co.uk/tutorials/tutorials">Radiology Masterclass</a></li>
+            </ul>
+        </div>
     </div>
+<script>
+const images = ["cat-1.jpg", "cat-2.jpg", "cat-3.jpg", "cat-4.jpg", "cat-5.jpg", "cat-6.jpg", "cat-7.jpg", "cat-8.jpg", "cat-9.jpg", "cat-10.jpg", "cat-11.jpg", "cat-12.jpg", "cat-13.jpg", "cat-14.jpg"]; 
+document.getElementById('random-cat').src = "cat/" + images[Math.floor(Math.random() * images.length)];
+</script>
 </body>
 </html>
